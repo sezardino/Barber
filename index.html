@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <div class="nav__hamburger hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="#services" class="nav__link">Услуги</a></li>
+                <li class="nav__list-item"><a href="#about" class="nav__link">Обо мне</a></li>
+                <li class="nav__list-item"><a href="#price" class="nav__link">Цены</a></li>
+                <li class="nav__list-item"><a href="#contact" class="nav__link">Контакт</a></li>
+                <li class="nav__list-item nav__list-item--phone"><a href="tel:#" class="nav__link nav__link--phone">516 788 219</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">Мужские стрижки и бритье</h1>
+        <section class="home">
+            <div class="container">
+                <h2 class="title home__title-main title-main">Мужские</h2>
+                <h2 class="title home__title-sub title-sub">Стрижки <br> <span>и бритье</span></h2>
+                <p class="title home__title-sub title-vl">Дмитрий Полякович</p>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <header class="services__sheader sheader sheader--right">
+                    <h2 class="sheader__title">Услуги.</h2>
+                    <h3 class="sheader__subtitle">Выбери то, что подходит тебе</h3>
+                </header>
+
+                <div class="services__descr descr descr--right">
+                    <h2 class="descr__title ">Хочешь крутую <br> стрижку <br> не выходя из дома?</h2>
+
+                    <p class="descr__text">
+                        Если не хватает времени на посещение салонов,
+                        ты можешь получить профессиональное обслуживание прямо у себя дома. Свяжись со мной, что бы договориться на удобное тебе время.
+                    </p>
+                </div>
+            </div>
+            <div class="srvices__slider slider">
+                <div class="slider__inner container">
+                    <div class="slide">
+                        <div class="slide__wrapper">
+                            <source srcset="./img/content/slider/slide_1.webp, ./img/content/slider/slide_1@2.webp 2x" type="image/webp">
+                                <img src="./img/content/slider/slide_1.png" srcset="./img/content/slider/slide_1@2.png 2x" alt="only beard">
+                            </picture>
+                        </div>
+                        <picture>
+
+                        <p class="slider__title">Бритье</p>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__wrapper">
+                            <picture>
+                                <source srcset="./img/content/slider/slide_2.webp, ./img/content/slider/slide_2@2.webp 2x" type="image/webp">
+                                <img src="./img/content/slider/slide_2.png" srcset="./img/content/slider/slide_2@2.png 2x" alt="only beard">
+                            </picture>
+                        </div>
+
+                        <p class="slider__title">Стрижка + <br> бритье</p>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__wrapper">
+                            <picture>
+                                <source srcset="./img/content/slider/slide_3.webp, ./img/content/slider/slide_3@2.webp 2x" type="image/webp">
+                                <img src="./img/content/slider/slide_3.png" srcset="./img/content/slider/slide_3@2.png 2x" alt="only beard">
+                            </picture>
+                        </div>
+
+                        <p class="slider__title">Классическая стрижка</p>
+                    </div>
+                </div>
+                <ul class="slider__dots">
+                    <li class="dot"></li>
+                    <li class="dot dot--active"></li>
+                    <li class="dot"></li>
+                </ul>
+                <p class="slider__title-p">Стрижка + <br> борода</p>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="visually-hidden">Немного информации обо мне</h2>
+            <div class="container">
+                <header class="about__sheader sheader sheader--left">
+                    <h2 class="sheader__title">Обо мне.</h2>
+                    <h3 class="sheader__subtitle">Давай познакомимся</h3>
+                </header>
+
+                <div class="about__descr descr descr--left">
+                    <div class="descr__wrapper">
+                        <h2 class="descr__title ">Привет, меня зовут <br> Дима Полякович</h2>
+
+                        <p class="descr__text">
+                            Если не хватает времени на посещение салонов,
+                            Вы можете получить
+                            профессиональное обслуживание прямо у себя дома. Свяжитесь со мной, что бы договоритьсаетемени на посещ времения на удобное для Вас время. Если не хватает времени на посещение салонов.
+                        </p>
+                    </div>
+
+
+                    <div class="descr__img">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/content/about-decs.webp 1x, ./img/content/about-decs-2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./img/content/about-decs.png 1x, ./img/content/about-decs-2x.png 2x">
+                            <source srcset="./img/content/about-mob.webp, ./img/content/about-mob-2x.webp 2x" type="image/webp" type="image/webp">
+                            <img src="./img/content/about-mob.png" srcset="./img/content/about-mob-2x.png 2x" alt="It is my photo">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistic" id="statistic">
+            <h2 class="visually-hidden">Статистика</h2>
+            <div class="container">
+                <ul class="statistic__list">
+                    <li class="statistic__item">
+                        <p class="statistic__counter">10</p>
+                        <p class="statistic__descr">Лет <br> работы</p>
+                    </li>
+                    <li class="statistic__item">
+                        <p class="statistic__counter">185</p>
+                        <p class="statistic__descr">Довольных <br> клиентов</p>
+                    </li>
+                    <li class="statistic__item">
+                        <p class="statistic__counter">36</p>
+                        <p class="statistic__descr">Номинаций <br> и наград</p>
+                    </li>
+                    <li class="statistic__item">
+                        <p class="statistic__counter">97</p>
+                        <p class="statistic__descr">Выездов на <br> дом</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="price" id="price">
+            <h2 class="visually-hidden">Наши цены</h2>
+            <div class="container">
+                <header class="price__sheader sheader sheader--right">
+                    <h2 class="sheader__title">Цены.</h2>
+                    <h3 class="sheader__subtitle">Ознакомся с ценами за основные услуги</h3>
+                </header>
+
+                <ul class="price__list">
+                    <li class="price__list-item item">
+                        <div class="item__header">
+                            <p class="item__header-text">Стрижка</p>
+                            <div class="item__header-price">7 руб.</div>
+                        </div>
+                        <p class="item__descr">
+                            Помогу подобрать и реализовать крутую стрижку, которая будет отлично сочетаться с бородой причем как на короткие волосы, так и на средние и длинные.
+                        </p>
+                    </li>
+                    <li class="price__list-item item">
+                        <div class="item__header">
+                            <p class="item__header-text">Бритье</p>
+                            <div class="item__header-price">2 руб.</div>
+                        </div>
+                        <p class="item__descr">
+                            Выполню бороду в соответствии с модными тенденциями и с другими факторами, которая придаст общему облику мужественность и особый шарм.
+                        </p>
+                    </li>
+                    <li class="price__list-item item">
+                        <div class="item__header">
+                            <p class="item__header-text">Стрижка + бритье</p>
+                            <div class="item__header-price">9 руб.</div>
+                        </div>
+                        <p class="item__descr">
+                            Стрижки с бородой могут быть самыми разными: все зависит от того, насколько далеко ты готов зайти, а я подскажу самые актуальные варианты прически с бородой.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <div class="container">
+                <header class="contact__sheader sheader sheader--left">
+                    <h2 class="sheader__title">Контакты.</h2>
+                    <h3 class="sheader__subtitle">Свяжись со мной и запишись на стрижку</h3>
+                </header>
+
+                <form action="#" class="contact__form form">
+                    <input type="text" name="name" placeholder="Имя и фамилия" required>
+                    <input type="text" name="phone" placeholder="Номер телефона" required>
+                    <textarea name="message" placeholder="Сообщение" required></textarea>
+                    <button class="form__button">Отправить</button>
+                </form>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item contact__info-item--phone"><a href="tel:#">516 788 219</a></li>
+                    <li class="contact__info-item contact__info-item--mail"><a href="mailto:#">d.polakovich@gmail.com</a></li>
+                    <li class="contact__info-item contact__info-item--address">ул. Кирова 8/2 г.Гродно</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__social">
+                <li><a href="#"><img src="./img/icons/footer-social/instagram.png" alt="social img"></a></li>
+                <li><a href="#"><img src="./img/icons/footer-social/facebook.png" alt="social img"></a></li>
+                <li><a href="#"><img src="./img/icons/footer-social/vk.png" alt="social img"></a></li>
+            </ul>
+
+            <p class="author">Anna Arechwa © 2020</p>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
