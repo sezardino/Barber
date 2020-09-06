@@ -1,6 +1,6 @@
 # Barber
 
-Landing template
+Landing page template
 
 if you wont to see https://sezardino.github.io/Barber/
 
