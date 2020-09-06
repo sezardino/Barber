@@ -1,0 +1,17 @@
+.about {
+  padding-top: 38px;
+  &__sheader {
+    margin-bottom: 83px;
+  }
+}
+
+@media(min-width: $decstop-width) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 128px;
+    position: relative;
+    &__sheader {
+      margin-bottom: 122px;
+    }
+  }
+}

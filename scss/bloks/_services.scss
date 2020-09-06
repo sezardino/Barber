@@ -1,0 +1,18 @@
+.services {
+  padding-top: 35px;
+  &__sheader {
+    margin-bottom: 83px;
+  }
+  &__descr {
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: $decstop-width) {
+  .services {
+    padding-top: 100px;
+    &__sheader {
+      margin-bottom: 123px;
+    }
+  }
+}

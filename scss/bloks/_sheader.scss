@@ -1,0 +1,116 @@
+.sheader {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  &:before {
+    content: '';
+    width: 20px;
+    height: 178px;
+    background-color: $blue;
+
+    position: absolute;
+    top: -60px;
+  }
+  &--right {
+    text-align: right;
+    padding-right: 10px;
+    &:before {
+      right: -20px;
+    }
+  }
+  &--left {
+    text-align: left;
+    padding-left: 10px;
+    &:before {
+      left: -20px;
+    }
+  }
+  &__title {
+    padding-bottom: 20px;
+
+
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    color: $blue;
+
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: '';
+      width: 45px;
+      height: 1px;
+      background-color: $blue;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__subtitle {
+    font-weight: 100;
+    font-size: 18px;
+    color: #767676;
+
+    margin-top: 18px;
+  }
+}
+
+@media(min-width:$decstop-width) {
+  .sheader {
+    &:before {
+      width: 173px;
+      height: 255px;
+
+      position: absolute;
+      top: -135px;
+    }
+    &--right {
+      text-align: right;
+      padding-right: 255px;
+      &:before {
+        right: 0;
+      }
+      .sheader__title {
+        &::after {
+          content: '';
+          width: 60px;
+          left: 135px;
+        }
+      }
+    }
+    &--left {
+      text-align: left;
+      padding-left: 255px;
+      &:before {
+        left: 0;
+      }
+      .sheader__title {
+        &::after {
+          content: '';
+          width: 60px;
+          left: 0;
+        }
+      }
+    }
+    &__title {
+      font-size: 42px;
+      letter-spacing: 2px;
+      line-height: 45px;
+      text-transform: uppercase;
+
+      color: $blue;
+
+      position: relative;
+      display: inline-block;
+    }
+    &__subtitle {
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-top: 25px;
+    }
+  }
+}

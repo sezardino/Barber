@@ -1,0 +1,12 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: $decstop-width) {
+  .header {
+    left: calc(50% + 5px);
+  }
+
+}
