@@ -1,15 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title>Title</title>
+    <title>Мужские стрижки | Дмитрий Полякович</title>
   </head>
 
   <body>
-    dawddawdwadw ddawdadw adwdawawdwd
-    <div id="root"></div>
+    <header class="header">
+      <button class="header__toggler toggler">
+        <span class="toggler__line"></span>
+        <span class="toggler__line"></span>
+        <span class="toggler__line"></span>
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Обо мне</a>
+          </li>
+          <li class="nav__item"><a href="#price" class="nav__link">Цены</a></li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Контакт</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contact-number contact-number">
+        <a href="tel:516788219" class="contact-number__link">516 788 219</a>
+        <p class="contact-number__text">516 788 219</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="background-image: url()">
+        <div class="hero__container container">
+          <h1 class="hero__title">
+            <span class="hero__title-span hero__title-span--main">
+              Мужские
+            </span>
+            <span class="hero__title-span--wrapper">
+              <span class="hero__title-span hero__title-span--main">
+                стрижки
+              </span>
+              <span class="hero__title-span hero__title-span--main">
+                и бритье
+              </span>
+            </span>
+          </h1>
+          <p class="hero__subtitle">Дмитрий Полякович</p>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container">
+          <header class="services__header section-header section-header--right">
+            <div class="section-header__before"></div>
+            <div class="section-header__wrapper">
+              <h2 class="section-header__title">Услуги.</h2>
+              <hr class="section-header__hr" />
+              <p class="section-header__subtitle">
+                Выбери то, что потходит тебе
+              </p>
+            </div>
+          </header>
+          <div class="services__content content content--row">
+            <h3 class="content__title content__title--right">
+              Хочешь крутую <br />
+              стрижку <br />
+              не выходя из дома?
+            </h3>
+            <p class="content__text content__text--left">
+              Если не хватает времени на посещение салонов, ты можешь получить
+              профессиональное обслуживание прямо у себя дома. Свяжись со мной,
+              что бы договориться на удобное тебе время.
+            </p>
+          </div>
+        </div>
+        <div class="services__slider slider">
+          <h2 class="visually-hidden">What we can offer for you</h2>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <img
+                src="./images/slide_1.png"
+                alt="Классическая
+              стрижка"
+                class="slider__item-image"
+              />
+              <hr class="slider__item-hr" />
+              <h3 class="slide__item-title">Классическая стрижка</h3>
+            </li>
+            <li class="slider__item">
+              <img
+                src="./images/slide_2.png"
+                alt="Оформление
+                бороды"
+                class="slider__item-image"
+              />
+              <hr class="slider__item-hr" />
+              <h3 class="slide__item-title">Оформление бороды</h3>
+            </li>
+            <li class="slider__item">
+              <img
+                src="./images/slide_3.png"
+                alt="Стрижка +
+                борода"
+                class="slider__item-image"
+              />
+              <hr class="slider__item-hr" />
+              <h3 class="slide__item-title">Стрижка + борода</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container about__container">
+          <div class="about__wrapper">
+            <header class="about__header section-header section-header--left">
+              <div class="section-header__before"></div>
+              <div class="section-header__wrapper">
+                <h2 class="section-header__title">Услуги.</h2>
+                <hr class="section-header__hr" />
+                <p class="section-header__subtitle">
+                  Выбери то, что потходит тебе
+                </p>
+              </div>
+            </header>
+            <div class="about__content content content--row">
+              <h3 class="content__title content__title--right">
+                Хочешь крутую <br />
+                стрижку <br />
+                не выходя из дома?
+              </h3>
+              <p class="content__text content__text--right">
+                Если не хватает времени на посещение салонов, ты можешь получить
+                профессиональное обслуживание прямо у себя дома. Свяжись со
+                мной, что бы договориться на удобное тебе время.
+              </p>
+              <hr class="content__hr" />
+            </div>
+          </div>
+          <div class="about__img-wrapper">
+            <img
+              src="./images/barber.png"
+              alt="Привет, меня зовут
+            Дима Полякович"
+              width="252"
+              height="368"
+              class="about__img"
+            />
+          </div>
+        </div>
+        <div class="about__statistic statistic" style="background-image: url()">
+          <h2 class="visually-hidden">My statistic</h2>
+          <ul class="statistic__list container list list--statistic">
+            <li class="list__item">
+              <h3 class="list__title">
+                <span class="list__title-count">10</span>
+                <span class="list__title-text">Лет работы</span>
+              </h3>
+            </li>
+            <li class="list__item">
+              <h3 class="list__title">
+                <span class="list__title-count">185</span>
+                <span class="list__title-text">Довольных клиентов</span>
+              </h3>
+            </li>
+            <li class="list__item">
+              <h3 class="list__title">
+                <span class="list__title-count">36</span>
+                <span class="list__title-text">Номинаций и наград</span>
+              </h3>
+            </li>
+            <li class="list__item">
+              <h3 class="list__title">
+                <span class="list__title-count">97</span>
+                <span class="list__title-text">Выездов на дом</span>
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="price" id="price">
+        <div class="container price__container">
+          <header class="about__header section-header section-header--right">
+            <div class="section-header__before"></div>
+            <div class="section-header__wrapper">
+              <h2 class="section-header__title">Цены.</h2>
+              <hr class="section-header__hr" />
+              <p class="section-header__subtitle">
+                Ознакомся с ценами за основные услуги
+              </p>
+            </div>
+          </header>
+          <div class="price__price-list">
+            <ul class="price-list__list">
+              <li class="price-list__item">
+                <h3 class="price-list__title">
+                  Стрижка <span class="price-list__price"> 7 руб. </span>
+                </h3>
+                <p class="price-list__description">
+                  Помогу подобрать и реализовать крутую стрижку, которая будет
+                  отлично сочетаться с бородой причем как на короткие волосы,
+                  так и на средние и длинные.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <h3 class="price-list__title">
+                  Бритье <span class="price-list__price"> 2 руб. </span>
+                </h3>
+                <p class="price-list__description">
+                  Выполню бороду в соответствии с модными тенденциями и с
+                  другими факторами, которая придаст общему облику
+                  мужественность и особый шарм.
+                </p>
+              </li>
+              <li class="price-list__item">
+                <h3 class="price-list__title">
+                  Стрижка + бритье
+                  <span class="price-list__price"> 9 руб. </span>
+                </h3>
+                <p class="price-list__description">
+                  Стрижки с бородой могут быть самыми разными: все зависит от
+                  того, насколько далеко ты готов зайти, а я подскажу самые
+                  актуальные варианты прически с бородой.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <header class="about__header section-header section-header--right">
+          <div class="section-header__before"></div>
+          <div class="section-header__wrapper">
+            <h2 class="section-header__title">Контакты.</h2>
+            <hr class="section-header__hr" />
+            <p class="section-header__subtitle">
+              Свяжись со мной и запишись на стрижку
+            </p>
+          </div>
+        </header>
+        <div class="contact__wrapper">
+          <form class="contact__form form">
+            <div class="form__row">
+              <input
+                type="text"
+                name="name"
+                class="form__input"
+                placeholder="Имя и фамилия "
+              />
+              <input
+                type="tel"
+                name="tel"
+                class="form__input"
+                placeholder="Номер телефона"
+              />
+            </div>
+            <div class="form__row">
+              <textarea name="message" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form__row">
+              <button class="form__button">Отправить</button>
+            </div>
+          </form>
+          <ul class="contact__list list list--contact">
+            <li class="list__item">
+              <a href="tel:516788219" class="list__link">
+                <h3 class="list__title">
+                  <span class="visually-hidden">tel</span>
+                  <img
+                    src="./images/tel.svg"
+                    alt="tel"
+                    class="list__link-img"
+                  />
+                  516788219
+                </h3>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="mailto:d.polakovich@gmail.com" class="list__link">
+                <h3 class="list__title">
+                  <span class="visually-hidden">mail</span>
+                  <img
+                    src="./images/mail.svg"
+                    alt="tel"
+                    class="list__link-img"
+                  />
+                  d.polakovich@gmail.com
+                </h3>
+              </a>
+            </li>
+            <li class="list__item">
+              <h3 class="list__title">
+                <span class="visually-hidden">mail</span>
+                <img
+                  src="./images/location.svg"
+                  alt="tel"
+                  class="list__link-img"
+                />
+                ул. Кирова 8/2 г.Гродно
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <ul class="list list--social footer__list">
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <img
+                src="./images/instagram.svg"
+                alt="instagram logo"
+                class="list__img"
+              />
+              <span class="visually-hidden"> Instagram </span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <img
+                src="./images/facebook.svg"
+                alt="Facebook logo"
+                class="list__img"
+              />
+              <span class="visually-hidden"> Facebook </span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <img src="./images/vk.svg" alt="vk logo" class="list__img" />
+              <span class="visually-hidden"> VK </span>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copy copy">Anna Arechwa © 2020</p>
+      </div>
+    </footer>
   </body>
 </html>
