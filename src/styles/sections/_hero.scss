@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include breakpoint-up('md') {
+    @include breakpoint-up('sm') {
       align-items: flex-end;
     }
   }

@@ -9,30 +9,34 @@
   </head>
 
   <body>
-    <header class="header">
-      <button class="header__toggler toggler">
+    <header class="header container js-header">
+      <button class="header__toggler toggler js-toggler">
         <span class="toggler__line"></span>
         <span class="toggler__line"></span>
         <span class="toggler__line"></span>
         <span class="visually-hidden">Open menu</span>
       </button>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Услуги</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">Обо мне</a>
-          </li>
-          <li class="nav__item"><a href="#price" class="nav__link">Цены</a></li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Контакт</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__contact-number contact-number">
-        <a href="tel:516788219" class="contact-number__link">516 788 219</a>
-        <p class="contact-number__text">516 788 219</p>
+      <div class="header__wrapper header__wrapper--open js-nav">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a href="#price" class="nav__link">Цены</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакт</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact-number contact-number">
+          <a href="tel:516788219" class="contact-number__link">516 788 219</a>
+          <p class="contact-number__text">516 788 219</p>
+        </div>
       </div>
     </header>
 
