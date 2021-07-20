@@ -68,7 +68,6 @@
             <div class="section-header__before"></div>
             <div class="section-header__wrapper">
               <h2 class="section-header__title">Услуги.</h2>
-              <hr class="section-header__hr" />
               <p class="section-header__subtitle">
                 Выбери то, что потходит тебе
               </p>
@@ -130,7 +129,6 @@
               <div class="section-header__before"></div>
               <div class="section-header__wrapper">
                 <h2 class="section-header__title">Услуги.</h2>
-                <hr class="section-header__hr" />
                 <p class="section-header__subtitle">
                   Выбери то, что потходит тебе
                 </p>
@@ -197,7 +195,6 @@
             <div class="section-header__before"></div>
             <div class="section-header__wrapper">
               <h2 class="section-header__title">Цены.</h2>
-              <hr class="section-header__hr" />
               <p class="section-header__subtitle">
                 Ознакомся с ценами за основные услуги
               </p>
@@ -241,78 +238,79 @@
         </div>
       </section>
       <section class="contact" id="contact">
-        <header class="about__header section-header section-header--right">
-          <div class="section-header__before"></div>
-          <div class="section-header__wrapper">
-            <h2 class="section-header__title">Контакты.</h2>
-            <hr class="section-header__hr" />
-            <p class="section-header__subtitle">
-              Свяжись со мной и запишись на стрижку
-            </p>
-          </div>
-        </header>
-        <div class="contact__wrapper">
-          <form class="contact__form form">
-            <div class="form__row">
-              <input
-                type="text"
-                name="name"
-                class="form__input"
-                placeholder="Имя и фамилия "
-              />
-              <input
-                type="tel"
-                name="tel"
-                class="form__input"
-                placeholder="Номер телефона"
-              />
+        <div class="contact__container container">
+          <header class="about__header section-header section-header--right">
+            <div class="section-header__before"></div>
+            <div class="section-header__wrapper">
+              <h2 class="section-header__title">Контакты.</h2>
+              <p class="section-header__subtitle">
+                Свяжись со мной и запишись на стрижку
+              </p>
             </div>
-            <div class="form__row">
-              <textarea name="message" placeholder="Сообщение"></textarea>
-            </div>
-            <div class="form__row">
-              <button class="form__button">Отправить</button>
-            </div>
-          </form>
-          <ul class="contact__list list list--contact">
-            <li class="list__item">
-              <a href="tel:516788219" class="list__link">
-                <h3 class="list__title">
-                  <span class="visually-hidden">tel</span>
-                  <img
-                    src="./assets/images/tel.svg"
-                    alt="tel"
-                    class="list__link-img"
-                  />
-                  516788219
-                </h3>
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="mailto:d.polakovich@gmail.com" class="list__link">
+          </header>
+          <div class="contact__wrapper">
+            <form class="contact__form form">
+              <div class="form__row">
+                <input
+                  type="text"
+                  name="name"
+                  class="form__input"
+                  placeholder="Имя и фамилия "
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  class="form__input"
+                  placeholder="Номер телефона"
+                />
+              </div>
+              <div class="form__row">
+                <textarea name="message" placeholder="Сообщение"></textarea>
+              </div>
+              <div class="form__row">
+                <button class="form__button">Отправить</button>
+              </div>
+            </form>
+            <ul class="contact__list list list--contact">
+              <li class="list__item">
+                <a href="tel:516788219" class="list__link">
+                  <h3 class="list__title">
+                    <span class="visually-hidden">tel</span>
+                    <img
+                      src="./assets/images/tel.svg"
+                      alt="tel"
+                      class="list__link-img"
+                    />
+                    516788219
+                  </h3>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="mailto:d.polakovich@gmail.com" class="list__link">
+                  <h3 class="list__title">
+                    <span class="visually-hidden">mail</span>
+                    <img
+                      src="./assets/images/mail.svg"
+                      alt="tel"
+                      class="list__link-img"
+                    />
+                    d.polakovich@gmail.com
+                  </h3>
+                </a>
+              </li>
+              <li class="list__item">
                 <h3 class="list__title">
                   <span class="visually-hidden">mail</span>
                   <img
-                    src="./assets/images/mail.svg"
+                    src="./assets/images/location.svg"
                     alt="tel"
                     class="list__link-img"
                   />
-                  d.polakovich@gmail.com
+                  ул. Кирова 8/2 г.Гродно
                 </h3>
-              </a>
-            </li>
-            <li class="list__item">
-              <h3 class="list__title">
-                <span class="visually-hidden">mail</span>
-                <img
-                  src="./assets/images/location.svg"
-                  alt="tel"
-                  class="list__link-img"
-                />
-                ул. Кирова 8/2 г.Гродно
-              </h3>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
