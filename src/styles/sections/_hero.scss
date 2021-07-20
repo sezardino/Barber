@@ -6,10 +6,29 @@
   background-repeat: no-repeat;
   background-position-x: -80px;
   background-position-y: -30px;
+
+  @include breakpoint-up('md') {
+    padding-top: 240px;
+  }
+  @include breakpoint-up('xl') {
+    min-height: 953px;
+    background-size: 1400px 1300px;
+  }
+
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint-up('md') {
+      align-items: flex-end;
+    }
   }
 
   &__title {
+    display: inline-block;
+    width: min-content;
+    margin: 0;
   }
 
   &__title-span {
@@ -19,25 +38,79 @@
     letter-spacing: 0.013rem;
     text-transform: uppercase;
     text-align: right;
+    letter-spacing: 0.32rem;
 
     color: #ffffff;
+
+    @include breakpoint-up('md') {
+      font-size: 4.5rem;
+      line-height: 4.7rem;
+    }
+
+    @include breakpoint-up('xl') {
+      font-size: 5.5rem;
+      line-height: 5.7rem;
+    }
+    @include breakpoint-up('xl') {
+      font-size: 6.5rem;
+      line-height: 6.7rem;
+    }
 
     &--main {
       font-family: 'Poiret One';
       font-weight: 100;
       font-size: 4.9rem;
       line-height: 5.1rem;
-
-      letter-spacing: 0.04rem;
+      letter-spacing: 0.1rem;
 
       color: rgba(255, 255, 255, 0.4);
+
+      @include breakpoint-up('md') {
+        font-size: 8rem;
+        line-height: 8.1rem;
+      }
+
+      @include breakpoint-up('xl') {
+        font-size: 11rem;
+        line-height: 11.4rem;
+      }
+      @include breakpoint-up('xxl') {
+        font-size: 16rem;
+        line-height: 16.4rem;
+      }
     }
 
     &--wrapper {
+      margin-top: 15px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include breakpoint-up('md') {
+        margin-top: 0;
+        width: 334px;
+      }
+      @include breakpoint-up('xl') {
+        width: 400px;
+      }
+      @include breakpoint-up('xxl') {
+        width: 468px;
+      }
+    }
+
+    &--left {
+      align-self: flex-start;
+    }
+    &--right {
+      align-self: flex-end;
     }
   }
 
   &__subtitle {
+    margin-top: 20px;
+    margin-bottom: 0;
+
     font-family: 'Poiret One';
     font-size: 1.8rem;
     line-height: 1.9rem;
@@ -45,5 +118,14 @@
     letter-spacing: 0.015rem;
 
     color: #ffffff;
+
+    @include breakpoint-up('md') {
+      font-size: 20px;
+      line-height: 2.1rem;
+    }
+    @include breakpoint-up('md') {
+      font-size: 23px;
+      line-height: 2.14rem;
+    }
   }
 }
