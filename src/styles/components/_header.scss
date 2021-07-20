@@ -54,6 +54,9 @@
 
     &--open {
       height: 145px;
+      @include breakpoint-up('sm') {
+        height: initial;
+      }
     }
   }
 
