@@ -20,10 +20,6 @@ class Nav {
     this.nav
       .querySelectorAll('.nav__link')
       .forEach((item) => item.addEventListener('click', () => this.closeNav()))
-  }
-
-  init() {
-    this.addListeners()
     window.addEventListener('resize', (evt) => {
       if (
         evt.target.innerWidth >= 576 &&
@@ -32,6 +28,10 @@ class Nav {
         this.closeNav()
       }
     })
+  }
+
+  init() {
+    this.addListeners()
   }
 }
 
