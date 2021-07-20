@@ -3,8 +3,14 @@
   }
 
   &__content {
+    margin-top: 20px;
   }
 
   &__slider {
+    margin-top: 44px;
+
+    @include breakpoint-up('lg') {
+      margin-top: 112px;
+    }
   }
 }
