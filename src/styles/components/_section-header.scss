@@ -31,12 +31,18 @@
     .section-header__before {
       order: 1;
     }
+    .section-header__subtitle {
+      text-align: right;
+    }
   }
 
   &--left {
     justify-content: flex-start;
     .section-header__title {
       align-self: flex-start;
+    }
+    .section-header__subtitle {
+      text-align: left;
     }
   }
 
