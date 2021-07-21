@@ -1,10 +1,22 @@
 .contact {
+  background-color: #f9f9f9;
+  &__container {
+  }
   &__wrapper {
   }
 
   &__form {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint-up('lg') {
+      margin-top: 100px;
+    }
   }
 
   &__list {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
