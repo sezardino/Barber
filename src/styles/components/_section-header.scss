@@ -13,6 +13,15 @@
     top: -40px;
     align-items: flex-end;
   }
+  @include breakpoint-up('md') {
+    gap: 30px;
+  }
+  @include breakpoint-up('lg') {
+    gap: 55px;
+  }
+  @include breakpoint-up('xxl') {
+    gap: 70px;
+  }
 
   &--right {
     justify-content: flex-end;
@@ -69,6 +78,8 @@
     @include breakpoint-up('lg') {
       font-size: 4.2rem;
       line-height: 4.3rem;
+
+      padding-bottom: 20px;
     }
 
     &:before {
@@ -97,6 +108,7 @@
       font-weight: 300;
       font-size: 2rem;
       line-height: 2.1rem;
+      margin-top: 20px;
     }
   }
 }
