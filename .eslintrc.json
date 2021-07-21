@@ -19,6 +19,8 @@
       }
     ],
     "no-var": 1,
+    "no-plusplus": "off",
+    "no-return-assign": "off",
     "camelcase": 1,
     "no-new-wrappers": 1,
     "no-new": "off",

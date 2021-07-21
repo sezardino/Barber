@@ -256,15 +256,17 @@
             </div>
           </header>
           <div class="contact__wrapper">
-            <form class="contact__form form">
+            <form class="contact__form form js-form">
               <div class="form__row">
                 <input
+                  required
                   type="text"
                   name="name"
                   class="form__input"
                   placeholder="Имя и фамилия "
                 />
                 <input
+                  required
                   type="tel"
                   name="tel"
                   class="form__input"
@@ -273,14 +275,17 @@
               </div>
               <div class="form__row">
                 <textarea
+                  required
                   name="message"
                   placeholder="Сообщение"
                   class="form__input form__input--textarea"
                 ></textarea>
               </div>
-              <div class="form__row">
+              <footer class="form__footer">
                 <button class="form__button">Отправить</button>
-              </div>
+                <p class="form__error js-error">Error</p>
+                <p class="form__success js-success">Success</p>
+              </footer>
             </form>
             <ul class="contact__list list list--contact">
               <li class="list__item">
