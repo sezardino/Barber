@@ -1,4 +1,11 @@
 .footer {
+  background-color: #272727;
+  padding-top: 71px;
+  padding-bottom: 18px;
+  @include breakpoint-up('lg') {
+    padding-top: 82px;
+    padding-bottom: 25px;
+  }
   &__wrapper {
   }
 
@@ -6,5 +13,11 @@
   }
 
   &__copy {
+    margin-top: 60px;
+    margin: auto;
+
+    @include breakpoint-up('lg') {
+      margin-top: 36px;
+    }
   }
 }
