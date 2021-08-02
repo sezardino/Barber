@@ -1,0 +1,98 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  &--row {
+    @include breakpoint-up('md') {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    @include breakpoint-up('lg') {
+      gap: 80px;
+    }
+    @include breakpoint-up('xxl') {
+      gap: 160px;
+    }
+  }
+  &--column {
+    @include breakpoint-up('md') {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0095rem;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    @include breakpoint-up('lg') {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &--right {
+      text-align: right;
+    }
+    &--left {
+      text-align: left;
+      @include breakpoint-up('md') {
+        text-align: right;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 25px;
+
+    font-family: 'Poiret One';
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.014rem;
+
+    color: #767676;
+
+    @include breakpoint-up('lg') {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+
+      letter-spacing: 0.014rem;
+    }
+
+    &--left {
+      text-align: right;
+      @include breakpoint-up('md') {
+        text-align: left;
+        width: 54%;
+        max-width: 600px;
+        margin-top: 0;
+      }
+    }
+
+    &--right {
+      text-align: left;
+      @include breakpoint-up('md') {
+        text-align: right;
+      }
+    }
+  }
+
+  &__hr {
+    display: none;
+
+    @include breakpoint-up('md') {
+      display: block;
+      width: 56px;
+      height: 1px;
+      background-color: #4f8699;
+
+      margin: 0;
+      margin-top: 30px;
+      margin-left: auto;
+    }
+  }
+}

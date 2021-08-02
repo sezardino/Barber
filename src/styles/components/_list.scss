@@ -1,0 +1,129 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+
+  &--social {
+  }
+
+  &__item {
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  &__link {
+  }
+
+  &__link-img {
+  }
+
+  &__img {
+  }
+}
+
+.list--statistic {
+  margin: 0 auto;
+  @include breakpoint-up('sm') {
+    gap: 35px;
+  }
+  @include breakpoint-up('lg') {
+    gap: 150px;
+  }
+  @include breakpoint-up('fhd') {
+    gap: 241px;
+  }
+  .list {
+    &__item {
+      width: 100%;
+      max-width: 98px;
+    }
+    &__title {
+      color: #ffffff;
+    }
+    &__title-count {
+      font-weight: 900;
+      font-size: 3rem;
+      line-height: 3.1rem;
+      letter-spacing: 0.008rem;
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      @include breakpoint-up('lg') {
+        font-size: 4.2rem;
+        line-height: 4.3rem;
+      }
+    }
+
+    &__title-text {
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 2rem;
+
+      letter-spacing: 0.014rem;
+
+      @include breakpoint-up('lg') {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}
+
+.list--contact {
+  flex-direction: column;
+  gap: 10px;
+  max-width: 754px;
+
+  br {
+    display: none;
+    @include breakpoint-up('sm') {
+      display: initial;
+    }
+  }
+
+  @include breakpoint-up('sm') {
+    flex-direction: row;
+    @include breakpoint-up('sm') {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  .list {
+    &__item {
+      width: 100%;
+      @include breakpoint-up('sm') {
+        width: fit-content;
+      }
+    }
+    &__link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.014rem;
+
+      color: #767676;
+
+      @include breakpoint-up('sm') {
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 35px;
+      }
+    }
+    &__link-img {
+      height: 23px;
+    }
+  }
+}

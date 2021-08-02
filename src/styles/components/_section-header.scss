@@ -1,0 +1,120 @@
+.section-header {
+  margin: 0 -10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  position: relative;
+  top: -25px;
+
+  @include breakpoint-up('sm') {
+    margin: 0;
+    gap: 20px;
+    top: -40px;
+    align-items: flex-end;
+  }
+  @include breakpoint-up('md') {
+    gap: 30px;
+  }
+  @include breakpoint-up('lg') {
+    gap: 55px;
+  }
+  @include breakpoint-up('xxl') {
+    gap: 70px;
+  }
+
+  &--right {
+    justify-content: flex-end;
+    .section-header__title {
+      align-self: flex-end;
+    }
+    .section-header__before {
+      order: 1;
+    }
+    .section-header__subtitle {
+      text-align: right;
+    }
+  }
+
+  &--left {
+    justify-content: flex-start;
+    .section-header__title {
+      align-self: flex-start;
+    }
+    .section-header__subtitle {
+      text-align: left;
+    }
+  }
+
+  &__before {
+    width: 20px;
+    height: 178px;
+    background-color: #4f8699;
+    border: 1px solid #4f8699;
+    box-sizing: border-box;
+    box-shadow: inset -7px 7px 25px rgba(0, 0, 0, 0.35);
+
+    @include breakpoint-up('sm') {
+      width: 120px;
+      height: 178px;
+    }
+    @include breakpoint-up('lg') {
+      width: 173px;
+      height: 255px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.008rem;
+    text-transform: uppercase;
+
+    color: #4f8699;
+
+    position: relative;
+    padding-bottom: 10px;
+
+    @include breakpoint-up('lg') {
+      font-size: 4.2rem;
+      line-height: 4.3rem;
+
+      padding-bottom: 20px;
+    }
+
+    &:before {
+      content: '';
+      width: 45px;
+      height: 1px;
+      background-color: #4f8699;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.005rem;
+
+    color: #767676;
+
+    margin-top: 15px;
+
+    @include breakpoint-up('lg') {
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2.1rem;
+      margin-top: 20px;
+    }
+  }
+}

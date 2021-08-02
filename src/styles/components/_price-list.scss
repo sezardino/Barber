@@ -1,0 +1,53 @@
+.price-list {
+  max-width: 760px;
+  @include breakpoint-up('fhd') {
+    max-width: 900px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__item {
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0095rem;
+
+    color: #000000;
+
+    @include breakpoint-up('lg') {
+      font-size: 2.4rem;
+      line-height: 3.7rem;
+    }
+  }
+
+  &__price {
+  }
+
+  &__description {
+    margin-top: 10px;
+
+    font-family: 'Poiret One';
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+
+    letter-spacing: 0.005rem;
+
+    color: #767676;
+
+    max-width: 600px;
+
+    @include breakpoint-up('lg') {
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+}

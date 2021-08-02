@@ -1,0 +1,19 @@
+.contact-number {
+  font-family: 'Poiret One';
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+
+  letter-spacing: 0.014rem;
+  color: #ffffff;
+  &__link {
+    @include breakpoint-up('lg') {
+      display: none;
+    }
+  }
+
+  &__text {
+    @include breakpoint-down('lg') {
+      display: none;
+    }
+  }
+}

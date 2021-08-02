@@ -1,0 +1,113 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  max-width: 754px;
+  &__row {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    @include breakpoint-up('md') {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__input {
+    width: 100%;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: transparent;
+    border: none;
+
+    border-bottom: 0.3px solid #000000;
+
+    font-family: 'Poiret One';
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+
+    letter-spacing: 0.014rem;
+
+    color: rgba(118, 118, 118, 0.7);
+
+    @include breakpoint-up('lg') {
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+
+      letter-spacing: 0.014rem;
+
+      color: rgba(118, 118, 118, 0.85);
+    }
+
+    &--textarea {
+      resize: none;
+      height: 160px;
+
+      &::placeholder {
+        padding-top: 100px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    background: #272727;
+    border: none;
+    cursor: pointer;
+
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    @include breakpoint-up('md') {
+      width: 100%;
+      max-width: 180px;
+    }
+  }
+
+  &__error,
+  &__success {
+    display: none;
+
+    font-family: 'Poiret One';
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+
+    letter-spacing: 0.014rem;
+
+    color: rgba(118, 118, 118, 0.7);
+
+    @include breakpoint-up('lg') {
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+
+      letter-spacing: 0.014rem;
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    @include breakpoint-up('md') {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

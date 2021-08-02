@@ -1,0 +1,68 @@
+.header {
+  color: white;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint-up('sm') {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include breakpoint-up('lg') {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  &__toggler {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    transform: translateY(-50%);
+
+    @include breakpoint-up('sm') {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+    height: 0;
+    transition: 1s height ease-in-out;
+    overflow: hidden;
+    background-color: #202020;
+
+    @include breakpoint-up('sm') {
+      background-color: transparent;
+      height: initial;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    &--open {
+      height: 145px;
+      @include breakpoint-up('sm') {
+        height: initial;
+      }
+    }
+  }
+
+  &__nav {
+  }
+
+  &__contact-number {
+  }
+}
